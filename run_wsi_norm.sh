@@ -15,10 +15,10 @@ usage() {
 }
 
 # Default values
-wsi_dir="wsi_samples/"
-cache_dir="workspace/output/"
-output_dir="output/"
-gpu_ids="1"
+wsi_dir="/data/CAMELYON16/training/tumor/"
+cache_dir="/data/CAMELYON16_preprocess/cache/"
+output_dir="/data/CAMELYON16_preprocess/output/"
+gpu_ids="0"
 extract="ctranspath"
 model_file="mlcontext/ctranspath.pth"
 
@@ -50,8 +50,8 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Run the WSI normalization script
 python wsi-norm.py \
-    --wsi-dir "$dir/$wsi_dir" \
-    --cache-dir "$dir/$cache_dir" \
-    -o "$dir/$output_dir" \
+    --wsi-dir "$wsi_dir" \
+    --cache-dir "$cache_dir" \
+    -o "$output_dir" \
     -m "$dir/$model_file" \
     -e $extract
