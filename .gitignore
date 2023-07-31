@@ -132,5 +132,7 @@ dmypy.json
 
 **/*.sif
 **/*.pth
+**/*.deb
+**/logfile
 **/*.tar*
 .idea/
