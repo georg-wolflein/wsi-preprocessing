@@ -21,5 +21,6 @@ services:
       memlock: -1
       stack: 67108864
     volumes:
-      - "/data:/data"
-      - "~/Desktop/end2end-WSI-preprocessing:/app"
+      - "/mnt/isilon1/pathology/camelyon16:/data/CAMELYON16"
+      - "/mnt/isilon1/georg/camelyon16_preprocess:/data/CAMELYON16_preprocess"
+      - "~/end2end-WSI-preprocessing:/app"

@@ -3,12 +3,12 @@
 
 ##### ONLY THINGS TO FILL IN
 # Default values, use absolute paths only!
-wsi_dir="wsi_samples/"                #path
-cache_dir="workspace/output/"         #path
-output_dir="output/"                  #path
-gpu_ids="1"                           #select GPU ID
-extract="ctranspath"                  #retccl or ctranspath
-model_file="mlcontext/ctranspath.pth" #path, downloaded with setup.sh
+wsi_dir="/data/CAMELYON16/training/"
+cache_dir="/data/CAMELYON16_preprocess2/cache/"
+output_dir="/data/CAMELYON16_preprocess2/output/"
+gpu_ids="4,5,6,7"
+extract="ctranspath"
+model_file="mlcontext/ctranspath.pth"
 #####
 
 

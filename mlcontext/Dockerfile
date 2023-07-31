@@ -3,9 +3,9 @@ FROM ubuntu:latest
 ADD cenv_conda.txt cenv_conda.txt
 ENV PATH=/miniconda3/bin:$PATH
 ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=Europe/Berlin
+ENV TZ=Europe/London
 RUN apt-get update && \
-    DEBIAN_FRONTEND="noninteractive" TZ="Europe/Berlin" apt-get install -y tzdata && \
+    DEBIAN_FRONTEND="noninteractive" TZ="Europe/London" apt-get install -y tzdata && \
     apt-get install ffmpeg libsm6 libxext6  -y && \
     apt-get install -y openslide-tools && \
     apt-get install -y python3-openslide && \
